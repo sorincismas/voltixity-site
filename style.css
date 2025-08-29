@@ -1,0 +1,169 @@
+/* --- Reset & Variabile Globale --- */
+:root {
+    --orange: #FF6B00;
+    --dark-gray: #1A202C;
+    --light-gray: #F7FAFC;
+    --text-color: #4A5568;
+    --white: #FFFFFF;
+    --font-heading: 'Poppins', sans-serif;
+    --font-body: 'Roboto', sans-serif;
+}
+html { scroll-behavior: smooth; }
+body {
+    margin: 0;
+    font-family: var(--font-body);
+    color: var(--text-color);
+    background-color: var(--white);
+}
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.section-title {
+    font-family: var(--font-heading);
+    font-size: 2.5rem;
+    color: var(--dark-gray);
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/* --- Hero Section & Navbar --- */
+.hero-section {
+    background: linear-gradient(rgba(26, 32, 44, 0.7), rgba(26, 32, 44, 0.7)), url('/assets/hero-background.jpg') no-repeat center center/cover;
+    color: var(--white);
+    padding: 20px 0 100px 0;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+.logo {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+.nav-button {
+    background-color: transparent;
+    border: 2px solid var(--orange);
+    color: var(--white);
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+.nav-button:hover {
+    background-color: var(--orange);
+}
+.hero-content {
+    text-align: center;
+    max-width: 800px;
+    margin: 100px auto 0;
+}
+.hero-title {
+    font-family: var(--font-heading);
+    font-size: 3.5rem;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+.hero-subtitle {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    margin-bottom: 40px;
+}
+.cta-button {
+    background-color: var(--orange);
+    color: var(--white);
+    padding: 15px 35px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.1rem;
+    transition: all 0.3s;
+    border: none;
+    cursor: pointer;
+}
+.cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(255, 107, 0, 0.3);
+}
+
+/* --- Services Section --- */
+.services-section { padding: 80px 0; background-color: var(--light-gray); }
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+.service-card {
+    background-color: var(--white);
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    transition: all 0.3s;
+}
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+}
+.service-card h3 {
+    font-family: var(--font-heading);
+    color: var(--dark-gray);
+    margin-top: 0;
+}
+
+/* --- Why Us Section --- */
+.why-us-section { padding: 80px 0; }
+.why-us-content { max-width: 700px; margin: 0 auto; text-align: center; }
+.why-us-content ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 30px;
+    text-align: left;
+}
+.why-us-content li {
+    padding-left: 30px;
+    position: relative;
+    margin-bottom: 15px;
+}
+.why-us-content li::before {
+    content: '✓';
+    color: var(--orange);
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+/* --- Contact Section --- */
+.contact-section { padding: 80px 0; background-color: var(--dark-gray); color: var(--light-gray); }
+.contact-section .section-title { color: var(--white); }
+.contact-section p { text-align: center; max-width: 600px; margin: 0 auto 40px; }
+#contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#contact-form input, #contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #4A5568;
+    background-color: #2D3748;
+    color: var(--white);
+    font-size: 1rem;
+}
+#form-status { text-align: center; margin-top: 20px; font-weight: 600; }
+
+/* --- Footer --- */
+.footer {
+    padding: 40px 0;
+    background-color: var(--dark-gray);
+    color: var(--light-gray);
+    text-align: center;
+    border-top: 1px solid #2D3748;
+}
